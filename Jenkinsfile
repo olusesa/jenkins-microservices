@@ -11,4 +11,7 @@ node {
 	stage('QADeploy') {
 		echo "Deployment to QA Completed Succefully"
 	}
+	stage('Staging Deploy') {
+		echo "Deployment to Staging Completed Succefully"
+	}
 }
