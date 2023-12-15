@@ -22,8 +22,9 @@ pipeline {
 	//agent {docker {image 'node:13.8'}}
 	environment {
 		mavenHome = tool 'wyzlabmaven'
-		dockerHome = tool 'wyzlabdocker'
-		PATH = "$mavenHome/bin:$dockerHome/bin:$PATH"
+		//dockerHome = tool 'wyzlabdocker'
+		//PATH = "$mavenHome/bin:$dockerHome/bin:$PATH"
+		PATH = "$mavenHome/bin:$PATH"
 	}
 	stages {
 		stage('Build') {
