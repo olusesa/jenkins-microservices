@@ -23,7 +23,7 @@ pipeline {
 	environment {
 		mavenHome = tool 'wyzlabmaven'
 		dockerHome = tool 'wyzlabDocker'
-		//PATH = "$mavenHome/bin:$dockerHome/bin:$PATH"
+		//   PATH = "$mavenHome/bin:$dockerHome/bin:$PATH"
 		PATH = "$mavenHome/bin:$PATH"
 	}
 	stages {
